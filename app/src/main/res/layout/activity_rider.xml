@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.asifhashmi.uber.riderActivity" >
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".riderActivity" />
+
+    <Button
+        android:id="@+id/callOrCancelB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/black"
+        android:onClick="callOrCancel"
+        android:padding="5dp"
+        android:text="Call Uber"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/callOrCancelB"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="47dp"
+        android:background="@android:color/black"
+        android:onClick="logout"
+        android:padding="5dp"
+        android:text="Logout"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/driverDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/callOrCancelB"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:textSize="18sp" />
+</RelativeLayout>
